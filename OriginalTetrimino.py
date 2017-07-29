@@ -618,10 +618,11 @@ def dumbmenu(screen, menu, x_pos=100, y_pos=100, font=None, size=70, distance=1.
     # Draw the Menupoints
     screen.fill(BLACK)
     pygame.font.init()
-    if font == None:
-        myfont = pygame.font.Font(None, size)
-    else:
-        myfont = pygame.font.SysFont(font, size)
+    #if font == None:
+    #    myfont = pygame.font.Font(None, size)
+    #else:
+    #    myfont = pygame.font.SysFont(font, size)
+    myfont = BASICFONT
     cursorpos = 0
     renderWithChars = False
     for i in menu:
