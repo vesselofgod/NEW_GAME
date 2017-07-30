@@ -219,13 +219,13 @@ def main():
             DIFF = 2
             BLIND = 1
 
-        """if MUTE == 0 :
-            if random.randint(0, 1) == 0:
-                pygame.mixer.music.load('tetrisb.mid')
-            else:
-                pygame.mixer.music.load('tetrisc.mid')
-            pygame.mixer.music.play(-1, 0.0)
-        """
+
+        if random.randint(0, 1) == 0:
+            pygame.mixer.music.load('tetrisb.mp3')
+        else:
+            pygame.mixer.music.load('tetrisb.mp3')
+        pygame.mixer.music.play(-1, 0.0)
+
         runGame(BLIND)
         # pygame.mixer.music.stop()
         showTextScreen('Game Over')
